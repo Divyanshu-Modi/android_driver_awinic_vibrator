@@ -1939,7 +1939,7 @@ static int aw8693x_creat_node(struct aw_haptic *aw_haptic)
 {
 	int ret = 0;
 
-	ret = sysfs_create_group(&aw_haptic->i2c.dev->kobj,
+	ret = sysfs_create_group(&aw_haptic->i2c->dev.kobj,
 				 &aw8693x_vibrator_attribute_group);
 	if (ret < 0) {
 		aw_err("error create aw8693x sysfs attr files");

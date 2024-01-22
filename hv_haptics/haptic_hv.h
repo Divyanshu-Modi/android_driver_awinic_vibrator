@@ -537,15 +537,20 @@ struct aw_haptic_dts_info {
 
 	/* AW869XX AW8671X AW8692X AW8693X */
 	uint8_t d2s_gain;
+	uint8_t brk_bst_md;
 	uint8_t gain_bypass;
+	uint8_t cont_tset;
 	uint8_t cont_smart_loop;
 	uint8_t cont_drv1_lvl;
 	uint8_t cont_drv2_lvl;
+	uint8_t cont_wait_num;
 	uint8_t cont_brk_time;
+	uint8_t cont_bemf_set;
 	uint8_t cont_brk_gain;
 	uint8_t cont_drv1_time;
 	uint8_t cont_drv2_time;
 	uint8_t cont_track_margin;
+	uint8_t cont_bst_brk_gain;
 	uint8_t trig_cfg[24];
 	uint32_t cont_lra_vrms;
 	bool is_enabled_track_en;

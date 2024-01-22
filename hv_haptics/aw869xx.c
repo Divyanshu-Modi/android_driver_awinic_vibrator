@@ -1995,7 +1995,7 @@ static int aw869xx_creat_node(struct aw_haptic *aw_haptic)
 {
 	int ret = 0;
 
-	ret = sysfs_create_group(&aw_haptic->i2c.dev->kobj, &aw869xx_vibrator_attribute_group);
+	ret = sysfs_create_group(&aw_haptic->i2c->dev.kobj, &aw869xx_vibrator_attribute_group);
 	if (ret < 0)
 		aw_err("error creating sysfs attr files");
 
